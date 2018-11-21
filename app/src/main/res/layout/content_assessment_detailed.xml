@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AssessmentDetailed"
+    tools:showIn="@layout/activity_assessment_detailed">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <TextView
+            android:id="@+id/tvAssessmentTitle"
+            style="@style/formItems"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/titleLabel" />
+
+
+        <EditText
+            android:id="@+id/etAssessmentTitle"
+            style="@style/formItems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@id/tvAssessmentTitle"
+            android:inputType="textAutoComplete"
+            tools:ignore="Autofill,LabelFor" />
+
+        <TextView
+            android:id="@+id/tvAssessmentDueDate"
+            style="@style/formItems"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvAssessmentTitle"
+            android:layout_alignParentStart="true"
+            android:text="@string/due_date" />
+
+        <EditText
+            android:id="@+id/etAssessmentDueDate"
+            style="@style/formItems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvAssessmentTitle"
+            android:layout_toEndOf="@id/tvAssessmentDueDate"
+            android:inputType="date"
+            tools:ignore="Autofill,LabelFor" />
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

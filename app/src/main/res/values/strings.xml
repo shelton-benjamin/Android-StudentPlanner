@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">WGU Student Planner</string>
+    <string name="action_exit">Close App</string>
+    <string name="welcome">Welcome!</string>
+    <string name="termListButton">Term List</string>
+    <string name="title_activity_term_list">Term List</string>
+    <string name="action_back">Back</string>
+    <string name="titleLabel">Title</string>
+    <string name="startDate">Start Date</string>
+    <string name="endDate">End Date</string>
+    <string name="title_activity_create_term">Create Term</string>
+    <string name="button_save">Save</string>
+    <string name="title_activity_term_detailed">TermDetailed</string>
+    <string name="courses">Courses</string>
+    <string name="title_activity_course_list">Course List</string>
+    <string name="title_activity_create_course">Create Course</string>
+    <string name="delete_term">Delete Term</string>
+    <string name="title_activity_course_detailed">CourseDetailed</string>
+    <string name="title_activity_note_list">Notes</string>
+    <string name="notes">Notes</string>
+    <string name="title_activity_create_note">Create Note</string>
+    <string name="title_activity_note_detailed">Note</string>
+    <string name="assessments">Assessments</string>
+    <string name="title_activity_assessment_list">Assessment List</string>
+    <string name="title_activity_create_assessment">Create Assessment</string>
+    <string name="courseMentorName">Mentor Name</string>
+    <string name="courseMentorEmail">Mentor Email</string>
+    <string name="courseMentorPhone">Mentor Phone</string>
+    <string name="title_activity_assessment_detailed">Assessment Detailed</string>
+    <string name="due_date">Due Date</string>
+    <string name="status">Status</string>
+    <string name="share">Share</string>
+    <string name="delete">Delete</string>
+    <string name="set_alerts">Set Alerts</string>
+
+
+</resources>

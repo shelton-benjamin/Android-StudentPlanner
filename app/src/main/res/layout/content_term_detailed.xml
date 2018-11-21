@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".TermDetailed"
+    tools:showIn="@layout/activity_term_detailed">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <TextView
+                android:id="@+id/tvTermTitle"
+                style="@style/formItems"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/titleLabel" />
+
+
+            <EditText
+                android:id="@+id/etTermTitle"
+                style="@style/formItems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@id/tvTermTitle"
+                android:inputType="textAutoComplete"
+                tools:ignore="Autofill,LabelFor" />
+
+            <TextView
+                android:id="@+id/tvTermStartDate"
+                style="@style/formItems"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvTermTitle"
+                android:layout_alignParentStart="true"
+                android:text="@string/startDate" />
+
+            <EditText
+                android:id="@+id/etTermStartDate"
+                style="@style/formItems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etTermTitle"
+                android:layout_toEndOf="@id/tvTermStartDate"
+                android:inputType="date"
+                tools:ignore="Autofill,LabelFor" />
+
+            <TextView
+                android:id="@+id/tvTermEndDate"
+                style="@style/formItems"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvTermStartDate"
+                android:layout_alignParentStart="true"
+                android:text="@string/endDate" />
+
+            <EditText
+                android:id="@+id/etTermEndDate"
+                style="@style/formItems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etTermStartDate"
+                android:layout_toEndOf="@id/tvTermEndDate"
+                android:inputType="date"
+                tools:ignore="Autofill,LabelFor" />
+
+            <Button
+                android:id="@+id/coursesButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvTermEndDate"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/courses" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

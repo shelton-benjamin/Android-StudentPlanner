@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".CourseDetailed"
+    tools:showIn="@layout/activity_course_detailed">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <TextView
+                android:id="@+id/tvCourseTitle"
+                style="@style/formItems"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/titleLabel" />
+
+
+            <EditText
+                android:id="@+id/etCourseTitle"
+                style="@style/formItems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@id/tvCourseTitle"
+                android:inputType="textAutoComplete"
+                tools:ignore="Autofill,LabelFor" />
+
+
+            <TextView
+                android:id="@+id/tvCourseStartDate"
+                style="@style/formItems"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvCourseTitle"
+                android:layout_alignParentStart="true"
+                android:text="@string/startDate" />
+
+
+            <EditText
+                android:id="@+id/etCourseStartDate"
+                style="@style/formItems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etCourseTitle"
+                android:layout_toEndOf="@id/tvCourseStartDate"
+                android:inputType="date"
+                tools:ignore="Autofill,LabelFor" />
+
+
+            <TextView
+                android:id="@+id/tvCourseEndDate"
+                style="@style/formItems"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvCourseStartDate"
+                android:layout_alignParentStart="true"
+                android:text="@string/endDate" />
+
+
+            <EditText
+                android:id="@+id/etCourseEndDate"
+                style="@style/formItems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etCourseStartDate"
+                android:layout_toEndOf="@id/tvCourseEndDate"
+                android:inputType="date"
+                tools:ignore="Autofill,LabelFor" />
+
+
+            <TextView
+                android:id="@+id/tvCourseMentorName"
+                style="@style/formItems"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvCourseEndDate"
+                android:layout_alignParentStart="true"
+                android:text="@string/courseMentorName" />
+
+
+            <EditText
+                android:id="@+id/etCourseMentorName"
+                style="@style/formItems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etCourseEndDate"
+                android:layout_toEndOf="@id/tvCourseMentorName"
+                android:inputType="textAutoComplete"
+                tools:ignore="Autofill,LabelFor" />
+
+
+            <TextView
+                android:id="@+id/tvCourseMentorEmail"
+                style="@style/formItems"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvCourseMentorName"
+                android:layout_alignParentStart="true"
+                android:text="@string/courseMentorEmail" />
+
+
+            <EditText
+                android:id="@+id/etCourseMentorEmail"
+                style="@style/formItems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etCourseMentorName"
+                android:layout_toEndOf="@id/tvCourseMentorEmail"
+                android:inputType="textEmailAddress"
+                tools:ignore="Autofill,LabelFor" />
+
+
+            <TextView
+                android:id="@+id/tvCourseMentorPhone"
+                style="@style/formItems"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvCourseMentorEmail"
+                android:layout_alignParentStart="true"
+                android:text="@string/courseMentorPhone" />
+
+
+            <EditText
+                android:id="@+id/etCourseMentorPhone"
+                style="@style/formItems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etCourseMentorEmail"
+                android:layout_toEndOf="@id/tvCourseMentorPhone"
+                android:inputType="phone"
+                tools:ignore="Autofill,LabelFor" />
+
+            <TextView
+                android:id="@+id/tvCourseStatus"
+                style="@style/formItems"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvCourseMentorPhone"
+                android:layout_alignBaseline="@id/spCourseStatus"
+                android:layout_alignParentStart="true"
+                android:text="@string/status" />
+
+            <Spinner
+                android:id="@+id/spCourseStatus"
+                style="@style/formItems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etCourseMentorPhone"
+                android:layout_toEndOf="@id/tvCourseStatus"
+                android:spinnerMode="dropdown" />
+
+            <Button
+                android:id="@+id/assessmentsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvCourseStatus"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/assessments" />
+
+            <Button
+                android:id="@+id/notesButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spCourseStatus"
+                android:layout_alignBaseline="@id/assessmentsButton"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@id/assessmentsButton"
+                android:text="@string/notes" />
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
